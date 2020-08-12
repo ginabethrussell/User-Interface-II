@@ -4,25 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gina Russell</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style/index.css">
 </head>
 <body>
     <header>
         <h1>Gina Russell</h1>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-            <a href="projects.html">Projects</a>
+            <a href="index.html">Home</a><!--
+            --><a href="about.html">About</a><!--
+            --><a href="contact.html">Contact</a><!--
+            --><a href="projects.html">Projects</a>
         </nav>
     </header>
     <main>
-        <section class="my-image">
-            <div class="photo">
+        <section class="my-info">
+            <div class="my-photo">
                 <img src="assets/idea.jpg" alt="idea lightbulb">
             </div>
-            <div class="my-info">
+            <div class="my-text">
                 <h2>Gina Russell</h2>
-                <button>My Projects</button>
+                <button onclick="window.location.href='projects.html'">My Projects</button>
                 <p>
                     I am an insatiably curious enthusiastic learner, a collaborative 
                     team player, and driven to excellence. I embrace both a growth mindset
@@ -55,7 +58,7 @@
             </figure>
             <figure>
                 <img src="https://picsum.photos/200/200" alt="placeholder image">
-                <figcaption>Wondering if these are free?</figcaption>  
+                <figcaption>Someone you know?</figcaption>  
             </figure>
             <figure>
                 <img src="https://picsum.photos/200/200" alt="placeholder image">
@@ -67,8 +70,12 @@
         </section>
     </main>
     <footer>
-        <h3>Let's Code Something Together</h3>
-        <button>Contact Me</button>
+        <h3>Let's Code Something Together!</h3>
+        <button onclick="window.location.href='contact.html'">Contact Me</button>
+        <div class="social-media">
+            <a href="https://github.com/ginabethrussell" target="_blank"><i class="fa fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/gina-beth-russell/" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+        </div>
     </footer>
 </body>
 </html>
