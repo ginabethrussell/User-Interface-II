@@ -56,7 +56,7 @@ table {
 }
 html {
     font-size: 62.5%;
-    font-family: 'Merriweather', serif;
+    font-family: 'Montserrat', serif;
 }
 
 /* Header */
@@ -68,7 +68,7 @@ header {
 }
 header h1 {
     font-size: 3rem;
-    font-weight: 700;
+    font-weight: 600;
     text-transform: uppercase;
 }
 header nav {
@@ -99,6 +99,7 @@ main .my-info {
     display: flex;
     width: 100%;
     margin: 0 auto;
+    margin-top: 2%;
     max-width: 1200px;
     padding: 1%;
     align-items: center;
@@ -237,4 +238,78 @@ footer .social-media i {
     footer button {
         margin-bottom: 5%;
     }
+}
+
+/* About Me Page */
+
+#about-page main .about-me {
+    display: flex;
+    width: 80%;
+    margin: 3% auto;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#about-page main .about-me .profile-photo img {
+    border-radius: 50%;
+    width: 300px;
+    border: 10px solid darkgray;
+}
+#about-page main .about-me .my-text {
+    width: 65%;
+    text-align: left;
+}
+#about-page main .blog-post, #about-page main .about-me {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5%;
+    width: 80%;
+    margin: 5% auto;
+    border-top: 5px double gray;
+    line-height: 1.2;
+    letter-spacing: 2px;
+}
+#about-page main .about-me {
+    padding-top: 0;
+    border: 0;
+}
+
+#about-page main .blog-post .blog-post-item h2, #about-page main .about-me .my-text h2 {
+    font-weight: 600;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+#about-page main .blog-post-item p {
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+#about-page main .blog-post-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 65%;
+    padding-left: 3%;
+    min-height: 250px;
+}
+
+#about-page main .blog-post-item .date {
+    font-size: 1.6rem;
+}
+
+#about-page main .blog-post-item ul {
+    font-size: 1.8rem;
+    line-height: 1.2;
+    letter-spacing: 2px;
+    list-style-type: none;
+}
+#about-page main .blog-post-item li {
+    margin-bottom: 1rem;
+}
+#about-page main .blog-post-item li .title{
+    font-style: italic;
+}
+#about-page main .blog-post-item li a {
+    color:black;
+    text-decoration: none;
 }
