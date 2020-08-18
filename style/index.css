@@ -61,6 +61,7 @@ html {
 /* Desktop-First Styles 1024 x 768 Screens */
 div.container {
     max-width: 960px;
+    width: 95%;
     margin: 0 auto;
     padding: 0;
 }
@@ -247,8 +248,34 @@ footer .social-media i:hover {
 
 }
 
+@media screen and (min-width: 801px) and (max-width: 900px){
+    div.container {
+        width: 85%;
+    }
+    main .my-text h2 {
+        font-size: 1.8rem;
+    }
+    main .my-text p {
+        font-size: 1.6rem;
+        letter-spacing: 1px;
+    }
+    main .my-text button {
+        max-width: 45%;
+        margin-bottom: 1.6rem;
+    }
+
+    footer button {
+        width: 20%;
+        /* margin-top: 1.6rem;
+        padding: 1%;
+        margin-bottom: 2%;
+        font-size: 1.6rem; */
+        transition: 0.3s;
+    }
+}
 /* Tablet Version CSS */
-/* @media screen and (max-width: 800px){
+
+@media screen and (max-width: 800px){
     main .my-info {
         display: flex;
         flex-direction: column;
