@@ -1,5 +1,3 @@
-/* Add CSS styling here */
-
 /* Implement CSS Reset */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -49,6 +47,7 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
 /* Begin Stylesheet */
 
 *  {
@@ -59,26 +58,33 @@ html {
     font-family: 'Montserrat', serif;
 }
 
+/* Desktop-First Styles 1024 x 768 Screens */
+div.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0;
+}
+
 /* Header */
 
 header {
-    /* background-color: darkgrey; */
     background: linear-gradient(to bottom, rgba(181,189,200,1) 0%,rgba(130,140,149,1) 36%,rgba(40,52,59,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5bdc8', endColorstr='#28343b',GradientType=0 );
     width: 100%;
     padding: 2%;
 }
+
 header h1 {
     font-size: 3rem;
     font-weight: 600;
     text-transform: uppercase;
     color: white;
 }
+
 header nav {
     display: flex;
-    margin-left: 1%;
-
 }
+
 header nav a {
     width: 100px;
     font-size: 1.6rem;
@@ -87,97 +93,112 @@ header nav a {
     color: black;
     background-color: white;
     border: 1px solid black;
-    padding: .5% 1%;
+    padding: 1%;
     text-align: center;
     transition: 0.3s;
 }
+
 header nav a:hover{
     background-color: black;
     color: white;
     cursor: pointer;
 }
 
-/* Main */
-/* my info section */
-main .my-info {
+/* Main Info & Photo Gallery */
+
+main section.my-info {
     display: flex;
     width: 100%;
-    margin: 0 auto;
-    margin-top: 2%;
-    max-width: 1200px;
-    padding: 1%;
-    align-items: center;
+    margin-top: 2%; 
+    margin-bottom: 2%;
+    padding: 1%; 
+    justify-content: space-between;
 }
+
 main .my-photo {
     flex-basis: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 main .my-photo img{
-    width: 90%;
+    max-width: 100%;
 }
+
 main .my-text {
+    margin-left: 2%;
     padding: 1%;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: flex-end;
 }
+
+main .my-text .my-text-info {
+    width: 85%;
+    margin: 0 auto;
+}
+
 main .my-text h2 {
     font-size: 2rem;
     font-weight: 700;
     text-transform: uppercase;
-    margin-bottom: 2%;
+    margin-bottom: 1.6rem;
 }
+
 main .my-text button {
-    width: 25%;
-    min-width: 100px;
-    padding: 1%;
+    max-width: 35%;
+    min-width: 15rem;
+    padding: 1rem;
+    font-size: 1.6rem;
     transition: 0.3s;
-    margin-bottom: 2%;
+    margin-bottom: 2rem;
 }
+
 main .my-text button:hover {
     color: white;
     background-color: black;
     cursor: pointer;
 }
+
 main .my-text p {
-    width: 80%;
     font-size: 1.8rem;
     line-height: 1.2;
     letter-spacing: 2px;
 }
-/* gallery section */
+
+/* Photo Gallery section */
+
 main .gallery {
-    max-width: 1200px;
+    max-width: 960px;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
     justify-content: space-evenly;
-    align-content: space-around;
-    align-items: space-between;
+    align-content: space-between;
 }
+
 main .gallery figure {
-    margin: 1%;
+    margin-bottom: 3rem;
     flex-basis: 20%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
 }
+
 main .gallery figcaption {
     font-size: 1.6rem;
-    margin-top: 5%;
+    margin-top: 1rem;
 }
 
 /* Footer Styles */
+
 footer {
     width: 100%;
     margin-top: 3%;
-    /* background-color: darkgrey; */
     background: linear-gradient(to bottom, rgba(181,189,200,1) 0%,rgba(130,140,149,1) 36%,rgba(40,52,59,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5bdc8', endColorstr='#28343b',GradientType=0 );
     color: white;
@@ -187,19 +208,22 @@ footer {
     justify-content: center;
     padding: 2%;
 }
+
 footer h3 {
     font-size: 2.5rem;
     margin-bottom: 1%;
     margin-top: 2%;
 }
+
 footer button {
-    width: 10%;
-    min-width: 100px;
+    width: 15%;
+    margin-top: 1.6rem;
     padding: 1%;
-    transition: 0.3s;
     margin-bottom: 2%;
+    font-size: 1.6rem;
     transition: 0.3s;
 }
+
 footer button:hover{
     color: white;
     background-color: black;
@@ -207,15 +231,24 @@ footer button:hover{
 }
 footer .social-media {
     display: flex;
-    width: 10%;
+    width: 15%;
     justify-content: space-around;
-    margin-bottom: 3%;
+    margin-bottom: 3rem;
 }
+
 footer .social-media i {
-    font-size: 3rem;
-    color: black;
+    font-size: 3.6rem;
+    color: white;
 }
-@media screen and (max-width: 900px){
+
+footer .social-media i:hover {
+    cursor: pointer;
+    color: black;
+
+}
+
+/* Tablet Version CSS */
+/* @media screen and (max-width: 800px){
     main .my-info {
         display: flex;
         flex-direction: column;
@@ -247,7 +280,10 @@ footer .social-media i {
         margin-bottom: 5%;
     }
 }
+/* Mobile Version CSS */
+@media screen and (max-width: 500px){
 
+}
 /* About Me Page */
 
 #about-page main .about-me {
@@ -333,7 +369,7 @@ footer .social-media i {
         line-height: 1.2;
         letter-spacing: 2px;
     }
-    
+     */
     #about-page main .blog-post-item {
         width: 100%;
         padding-top: 3%;
