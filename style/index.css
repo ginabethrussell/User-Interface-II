@@ -68,8 +68,7 @@ div.container {
 
 /* Header */
 header {
-    background: linear-gradient(to bottom, rgba(181,189,200,1) 0%,rgba(130,140,149,1) 36%,rgba(40,52,59,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5bdc8', endColorstr='#28343b',GradientType=0 );
+    background: steelblue;
     width: 100%;
     padding: 50px;
 }
@@ -77,7 +76,7 @@ header h1 {
     font-size: 3rem;
     font-weight: 600;
     text-transform: uppercase;
-    color: white;
+    color: snow;
 }
 header nav {
     display: flex;
@@ -87,16 +86,16 @@ header nav a {
     font-size: 1.6rem;
     margin-top: 2%;
     text-decoration: none;
-    color: black;
-    background-color: white;
-    border: 1px solid black;
+    color: dimgray;
+    background-color: snow;
+    border: 1px solid dimgray;
     padding: 1%;
     text-align: center;
     transition: 0.3s;
 }
 header nav a:hover{
-    background-color: black;
-    color: white;
+    background-color: dimgray;
+    color: snow;
     cursor: pointer;
 }
 
@@ -144,10 +143,13 @@ main .my-text button {
     font-size: 1.6rem;
     transition: 0.3s;
     margin-bottom: 2rem;
+    border: 0;
+    background: lightcoral;
+    color: snow;
 }
 main .my-text button:hover {
-    color: white;
-    background-color: black;
+    color: snow;
+    background-color: dimgray;
     cursor: pointer;
 }
 main .my-text p {
@@ -183,9 +185,8 @@ main .gallery figcaption {
 footer {
     width: 100%;
     margin-top: 3%;
-    background: linear-gradient(to bottom, rgba(181,189,200,1) 0%,rgba(130,140,149,1) 36%,rgba(40,52,59,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5bdc8', endColorstr='#28343b',GradientType=0 );
-    color: white;
+    background: steelblue;
+    color: snow;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -205,10 +206,13 @@ footer button {
     margin-bottom: 2%;
     font-size: 1.6rem;
     transition: 0.3s;
+    background: lightcoral;
+    color: snow;
+    border: 0;
 }
 footer button:hover{
-    color: white;
-    background-color: black;
+    color: snow;
+    background-color: dimgray;
     cursor: pointer;
 }
 footer .social-media {
@@ -219,11 +223,11 @@ footer .social-media {
 }
 footer .social-media i {
     font-size: 3.6rem;
-    color: white;
+    color: snow;
 }
 footer .social-media i:hover {
     cursor: pointer;
-    color: black;
+    color: lightcoral;
 }
 
 /* Transitional Styles between Desktop and Tablet */
@@ -307,13 +311,13 @@ footer .social-media i:hover {
 @media screen and (max-width: 500px){
     header {
         flex-direction: column;
-        background: #FFF;
+        background: snow;
         align-items: center;
         padding-top: 0;
         text-align: center;
     }
     header h1 {
-        color: #333;
+        color: dimgray;
         margin-bottom: 20px;
     }
     main section.my-info {
@@ -358,7 +362,7 @@ footer .social-media i:hover {
 #about-page main .about-me .profile-photo img {
     border-radius: 50%;
     width: 300px;
-    border: 10px solid darkgray;
+    border: 10px solid steelblue;
 }
 #about-page main .about-me .my-text {
     width: 65%;
@@ -371,7 +375,7 @@ footer .social-media i:hover {
     padding: 5%;
     width: 80%;
     margin: 5% auto;
-    border-top: 5px double gray;
+    border-top: 5px double steelblue;
     line-height: 1.2;
     letter-spacing: 2px;
 }
@@ -415,7 +419,7 @@ footer .social-media i:hover {
     font-style: italic;
 }
 #about-page main .blog-post-item li a {
-    color:black;
+    color: dimgray;
     text-decoration: none;
 }
 
@@ -482,8 +486,8 @@ input[type=text], select, textarea {
   }
   
   input[type=submit] {
-    background-color: #4CAF50;
-    color: white;
+    background-color: steelblue;
+    color: snow;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
@@ -491,12 +495,12 @@ input[type=text], select, textarea {
   }
   
   input[type=submit]:hover {
-    background-color: #45a049;
+    background-color: dimgray;
   }
   
   .container {
     border-radius: 5px;
-    background-color: #f2f2f2;
+    background-color: snow;
     padding: 20px;
   }
   /* End of W3Schools tutorial */
@@ -521,7 +525,7 @@ main.projects .project {
 }
 
 main.projects .project iframe {
-    border: 10px ridge gray;
+    border: 10px ridge dimgray;
     width: 100%;
     min-height: 600px;
 }
