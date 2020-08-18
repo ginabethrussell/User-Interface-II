@@ -176,6 +176,7 @@ main .gallery figure {
 main .gallery figcaption {
     font-size: 1.6rem;
     margin-top: 1rem;
+    text-align: center;
 }
 
 /* Footer Styles */
@@ -190,6 +191,7 @@ footer {
     align-items: center;
     justify-content: center;
     padding: 2%;
+    text-align: center;
 }
 footer h3 {
     font-size: 2.5rem;
@@ -276,6 +278,7 @@ footer .social-media i:hover {
     main .my-text {
         justify-content: center;
         align-items: center;
+        margin-left: 0;
     }
     main .my-text h2 {
         font-size: 1.8rem;
@@ -302,6 +305,44 @@ footer .social-media i:hover {
 
 /* Mobile Version CSS */
 @media screen and (max-width: 500px){
+    header {
+        flex-direction: column;
+        background: #FFF;
+        align-items: center;
+        padding-top: 0;
+        text-align: center;
+    }
+    header h1 {
+        color: #333;
+        margin-bottom: 20px;
+    }
+    main section.my-info {
+        padding-top: 25px;
+        flex-direction: column;
+        align-items: center;
+        width: 85%;
+    }
+    main .my-text {
+        margin-top: 25px;
+    }
+    main .my-text h2 {
+        font-size: 2.2rem;
+    }
+    main .my-text p {
+        font-size: 1.8rem;
+    }
+    main .my-text .my-text-info {
+        text-align: center;
+    }
+    main .gallery {
+        width: 100%;
+    }
+    main .gallery figure {
+        flex-basis: 45%;
+    }
+    footer h3 {
+        font-size: 1.8rem;
+    }
 
 }
 /* About Me Page */
