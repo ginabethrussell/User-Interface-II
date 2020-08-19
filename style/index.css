@@ -68,7 +68,7 @@ div.container {
 
 /* Header */
 header {
-    background: steelblue;
+    background: #31597d;
     width: 100%;
     padding: 50px;
 }
@@ -76,7 +76,7 @@ header h1 {
     font-size: 3rem;
     font-weight: 600;
     text-transform: uppercase;
-    color: snow;
+    color: #fffafa;
 }
 header nav {
     display: flex;
@@ -86,16 +86,16 @@ header nav a {
     font-size: 1.6rem;
     margin-top: 2%;
     text-decoration: none;
-    color: dimgray;
-    background-color: snow;
-    border: 1px solid dimgray;
+    color: #545454;
+    background-color: #fffafa;
+    border: 1px solid #545454;
     padding: 1%;
     text-align: center;
     transition: 0.3s;
 }
 header nav a:hover{
-    background-color: dimgray;
-    color: snow;
+    background-color: #545454;
+    color: #fffafa;
     cursor: pointer;
 }
 
@@ -144,12 +144,12 @@ main .my-text button {
     transition: 0.3s;
     margin-bottom: 2rem;
     border: 0;
-    background: lightcoral;
-    color: snow;
+    background: #AA1313;
+    color: #fffafa;
 }
 main .my-text button:hover {
-    color: snow;
-    background-color: dimgray;
+    color:#fffafa;
+    background-color: #545454;
     cursor: pointer;
 }
 main .my-text p {
@@ -185,8 +185,8 @@ main .gallery figcaption {
 footer {
     width: 100%;
     margin-top: 3%;
-    background: steelblue;
-    color: snow;
+    background:#31597d;
+    color:#fffafa;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -206,13 +206,13 @@ footer button {
     margin-bottom: 2%;
     font-size: 1.6rem;
     transition: 0.3s;
-    background: lightcoral;
-    color: snow;
+    background: #AA1313;
+    color:#fffafa;
     border: 0;
 }
 footer button:hover{
-    color: snow;
-    background-color: dimgray;
+    color:#fffafa;
+    background-color: #545454;
     cursor: pointer;
 }
 footer .social-media {
@@ -223,11 +223,11 @@ footer .social-media {
 }
 footer .social-media i {
     font-size: 3.6rem;
-    color: snow;
+    color:#fffafa;
 }
 footer .social-media i:hover {
     cursor: pointer;
-    color: lightcoral;
+    color: #AA1313;
 }
 
 /* Transitional Styles between Desktop and Tablet */
@@ -311,13 +311,13 @@ footer .social-media i:hover {
 @media screen and (max-width: 500px){
     header {
         flex-direction: column;
-        background: snow;
+        background:#fffafa;
         align-items: center;
         padding-top: 0;
         text-align: center;
     }
     header h1 {
-        color: dimgray;
+        color: #545454;
         margin-bottom: 20px;
     }
     main section.my-info {
@@ -362,7 +362,7 @@ footer .social-media i:hover {
 #about-page main .about-me .profile-photo img {
     border-radius: 50%;
     width: 300px;
-    border: 10px solid steelblue;
+    border: 10px solid #545454;
 }
 #about-page main .about-me .my-text {
     width: 65%;
@@ -375,7 +375,7 @@ footer .social-media i:hover {
     padding: 5%;
     width: 80%;
     margin: 5% auto;
-    border-top: 5px double steelblue;
+    border-top: 5px double #545454;
     line-height: 1.2;
     letter-spacing: 2px;
 }
@@ -419,7 +419,7 @@ footer .social-media i:hover {
     font-style: italic;
 }
 #about-page main .blog-post-item li a {
-    color: dimgray;
+    color: #545454;
     text-decoration: none;
 }
 
@@ -486,8 +486,8 @@ input[type=text], select, textarea {
   }
   
   input[type=submit] {
-    background-color: steelblue;
-    color: snow;
+    background-color: #545454;
+    color: #fffafa;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
@@ -495,12 +495,12 @@ input[type=text], select, textarea {
   }
   
   input[type=submit]:hover {
-    background-color: dimgray;
+    background-color: #545454;
   }
   
   .container {
     border-radius: 5px;
-    background-color: snow;
+    background-color:#fffafa;
     padding: 20px;
   }
   /* End of W3Schools tutorial */
@@ -525,7 +525,7 @@ main.projects .project {
 }
 
 main.projects .project iframe {
-    border: 10px ridge dimgray;
+    border: 5px solid #AA1313;
     width: 100%;
     min-height: 600px;
 }
