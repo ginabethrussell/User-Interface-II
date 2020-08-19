@@ -55,7 +55,6 @@ table {
 }
 html {
     font-size: 62.5%;
-    font-family: 'Montserrat', serif;
 }
 
 /* Desktop-First Styles 1024 x 768 Screens */
@@ -64,6 +63,7 @@ div.container {
     width: 95%;
     margin: 0 auto;
     padding: 0;
+    font-family: 'Open Sans', sans-serif;
 }
 
 /* Header */
@@ -305,6 +305,9 @@ footer .social-media i:hover {
   footer button {
       min-width: 150px;
   } 
+  footer .social-media {
+      width: 20%;
+  }
 }
 
 /* Mobile Version CSS */
@@ -346,6 +349,9 @@ footer .social-media i:hover {
     }
     footer h3 {
         font-size: 1.8rem;
+    }
+    footer .social-media {
+        width: 25%;
     }
 
 }
