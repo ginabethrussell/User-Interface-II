@@ -166,7 +166,6 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* height: 150px; */
 }
 .container footer h3 {
     font-size: 2.4rem;
@@ -180,6 +179,10 @@ html {
     background: #fffafa;
     margin-bottom: 16px;
 }
+.container footer button:hover {
+    color: #fffafa;
+    background: #545454;
+}
 .container footer .social-media {
     width: 150px;
     display: flex;
@@ -189,4 +192,266 @@ html {
 .container footer .social-media a {
     font-size: 5rem;
     color: #fffafa;
+}
+.container footer .social-media a:hover {
+    color: #aa1313;
+}
+
+/* Tablet Styles and Min-width 800px */
+@media (min-width:800px) {
+    .container header {
+        padding-top: 25px;
+        background: #31597d;
+        color: #fffafa;
+        margin-bottom: 25px;
+    }
+    .container header nav {
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 25px;
+    }
+    .container header nav a:hover {
+        background: #545454;
+        color: #fffafa;
+    }
+}
+
+/* Desktop Full Screen Sizes > 1024px */
+@media (min-width:1024px) {
+    .container{
+        width: 1024px;
+        margin: 0 auto;
+    }
+    .container header {
+        align-items: flex-start;
+    }
+    .container header h1 {
+        padding-left: 25px;
+    }
+    .container header nav {
+        padding-left: 50px;
+    }
+    .container main .my-info {
+        flex-direction: row;
+        width: 95%;
+        justify-content: space-between;
+    }
+    .container main .my-info .my-photo img{
+        width: 450px;
+    }
+    .container main .my-text-info {
+        align-items: flex-start;
+        margin-left: 50px;
+    }
+    .container main .my-text-info h2{
+        margin-left: 0;
+    }
+    .container main .my-text-info p {
+        text-align: left;
+        font-size: 2.4rem;
+    }
+    .container main .gallery {
+        padding-top: 50px;
+    }
+}
+
+/* Bonus Page Styles */
+/* About Me Page */
+
+#about-page main .about-me {
+    display: flex;
+    width: 80%;
+    margin: 3% auto;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#about-page main .about-me .profile-photo img {
+    border-radius: 50%;
+    width: 300px;
+    border: 10px solid #545454;
+}
+#about-page main .about-me .my-text {
+    width: 65%;
+    text-align: left;
+}
+#about-page main .blog-post, #about-page main .about-me {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5%;
+    width: 80%;
+    margin: 5% auto;
+    border-top: 5px double #545454;
+    line-height: 1.2;
+    letter-spacing: 2px;
+}
+#about-page main .about-me {
+    padding-top: 0;
+    border: 0;
+}
+
+#about-page main .blog-post .blog-post-item h2, #about-page main .about-me .my-text h2 {
+    font-weight: 600;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+#about-page main .blog-post-item p {
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+#about-page main .blog-post-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 65%;
+    padding-left: 3%;
+    min-height: 250px;
+}
+
+#about-page main .blog-post-item .date {
+    font-size: 1.6rem;
+}
+
+#about-page main .blog-post-item ul {
+    font-size: 1.8rem;
+    line-height: 1.2;
+    letter-spacing: 2px;
+    list-style-type: none;
+}
+#about-page main .blog-post-item li {
+    margin-bottom: 1rem;
+}
+#about-page main .blog-post-item li .title{
+    font-style: italic;
+}
+#about-page main .blog-post-item li a {
+    color: #545454;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 900px){
+    #about-page main .blog-post, #about-page main .about-me {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 5%;
+        width: 80%;
+        margin: 5% auto;
+        line-height: 1.2;
+        letter-spacing: 2px;
+    }
+     */
+    #about-page main .blog-post-item {
+        width: 100%;
+        padding-top: 3%;
+        min-height: 350px;
+    }
+    #about-page main .about-me .my-text{
+        width: 80%;
+        text-align: left;
+    }
+    #about-page main .about-me .my-text p{
+        width: 100%;
+        font-size: 1.8rem;
+        line-height: 1.2;
+        letter-spacing: 2px;
+       
+    }
+}
+
+/* Contact Page Styles */
+main.contact {
+    width: 95%;
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main.contact h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 2%;
+}
+main.contact form {
+    width: 80%;
+    margin: 0 auto;
+}
+main.contact label {
+    font-size: 1.6rem;
+}
+
+main.contact input[type=submit]{
+    font-size: 1.6rem;
+}
+
+/* From W3Schools tutorial */
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #545454;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #545454;
+    color: #fffafa;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #545454;
+  }
+  
+  main.contact .container {
+    border-radius: 5px;
+    background-color:#fffafa;
+    padding: 20px;
+    margin-bottom: 25px;
+  }
+  /* End of W3Schools tutorial */
+
+/* Projects Page */
+main.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main.projects h2{
+    font-size: 3rem;
+    font-weight: 600;
+    margin-top: 2%;
+    margin-bottom: 0;
+}
+
+main.projects .project {
+    width: 65%;
+    margin: 3% auto;
+}
+
+main.projects .project iframe {
+    border: 5px solid #AA1313;
+    width: 100%;
+    min-height: 600px;
+}
+
+main.projects h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+main.projects p {
+    font-size: 1.8rem;
+    line-height: 1.2;
 }
