@@ -1,11 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=    <h1> ABOUT </h1>, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1> CONTACT </h1>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gina Russell</title>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style/index.css">
+    </head>
+    <body>
+        <header>
+            <h1>Contact Me</h1>
+            <nav>
+                <a href="index.html">Home</a><!--
+                --><a href="about.html">About</a><!--
+                --><a href="contact.html">Contact</a><!--
+                --><a href="projects.html">Projects</a>
+            </nav>
+        </header>
+        <main class="contact">
+            <h2>Contact Form</h2>
+        <!-- FORM from W3Schools 
+        https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_contact_form -->
+            <div class="container">
+            <form action="contact.html">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                <option value="usa">USA</option>
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option> 
+                </select>
+
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+        <!-- FORM from W3Schools 
+        https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_contact_form -->      
+            </div>
+        </main>
+        <footer>
+            <h3>Let's Code Something Together!</h3>
+            <button onclick="window.location.href='contact.html'">Contact Me</button>
+            <div class="social-media">
+                <a href="https://github.com/ginabethrussell" target="_blank"><i class="fa fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/gina-beth-russell/" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+            </div>
+        </footer>
 </body>
 </html>
